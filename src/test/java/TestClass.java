@@ -29,6 +29,6 @@ public class TestClass {
         getWebDriver().findElement(By.className("checkbox__box")).click();
         getWebDriver().findElement(By.className("button")).click();
         String text = getWebDriver().findElement(By.cssSelector("[data-test-id=order-success]")).getText();
-        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
+        assertEquals("#Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
 }
